@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Quattrocento+Sans:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+$primary:#ff546c;
+$secondary:#6c757d;
+$fs18:18px;
+$fs16:16px;
+$bg:#f8f9fa;
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.fs18{
+    font-size: $fs16;
+}
+.pad-home{
+    padding: 180px 0;
+}
+.bg{
+    background-color: $bg !important;
+}
+.pad80{
+    padding: 80px 0;
+}
+.header-shadow{
+    padding: 10px 0;
+    width:100%;
+    z-index: 999;
+    margin-bottom: 0;
+    background-color: white;
+    transition: all 0.5s;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+header ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+header ul li a:hover{
+    color: black;
+   
+}
+
+.home-bg{
+    background-image: url(../images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.bg-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width:100%;
+}
+
+.home{
+    h1{
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: capitalize;
+    }
+    .home-text{
+        line-height: 2;
+        max-width: 600px;
+        font-size:$fs18;
+    }
+    .btn-1{
+        background-color:$primary;
+        border:2px solid $primary;
+        color:white;
+        font-size: 15px;
+        border-radius: 40px;
+        padding: 12px 26px;
+        &:hover {
+            background-color: #fe4164;
+        }
+    }
+    span{
+        margin:0px 10px;
+       display: block;
+       padding-top: 50px;
+       font-family:'Quattrocento Sans', sans-serif;
+    }
+    .btn-2{
+        background-color: transparent;
+        border:2px solid white;
+        color:white;
+        font-size: 15px;
+        border-radius: 40px;
+        padding: 12px 26px;
+        &:hover{
+            background-color: white;
+            color:black;
+        }
+    }
+    
+}
+.main-title{
+    max-width: 570px;
+    position: relative;
+    p{
+        color:#6c757d
+    }
+    i{
+        position: relative;
+        font-size: 20px;
+   
+    }
+    .box{
+        position: absolute;
+        content:"";
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fe4164;
+    }
+}
+// .main-title i::after{
+    
+//         position: absolute;
+//         content:"";
+//         width:30px;
+//         height: 2px;
+//         top:0;
+//         bottom: 0;
+//         background-color: #fe4164;
+    
+// }
+// .main-title i::before{
+    
+//     position: absolute;
+//     content:"";
+//     width:30px;
+//     height: 2px;
+//     top:0;
+//     right: 10px;
+//     background-color: #fe4164;
+
+// }
+
+.service-box{
+    box-shadow: 0px 0px 20px 3px #0406040a;
+    background-color: white;
+}
+.border-feature{
+    height: 2px;
+    background-color:$primary;
+    width:60px;
+    margin: 15px 0;
+}
+.feature-text p{
+    font-size: 18px;
+    max-width: 480px;
+    line-height: 1.4;
+}
+.about-icon i{
+    font-size: 42px;
+}
+.feature-icon i{
+    font-size: 44px;
+    color:$primary;
+}
+// trail
+.trail p{
+    max-width: 635px;
+}
+// trust
+.logo-img img{
+    max-width: 100px;
+    width:auto;
+}
+// screenshots
+.screenshot{
+    padding: 4px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    max-width: 100%;
+    margin: 5px;
+}
+// pricing
+.bg-white{
+    background-color: white;
+}
+.main-box{
+    padding: 40px;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    transition: all 0.5s;
+    h2{
+        font-weight: 700;
+        font-size: 49px;
+        font-family: 'Nunito', sans-serif;
+        sup{
+            position: relative;
+            top:-15px;
+            font-size: 26px;
+            left:10px
+        }
+    }
+    .bottom-text{
+        padding: 40px 0px;
+    }
+    .btn-3{
+            background-color:$primary;
+            border:2px solid $primary;
+            color:white;
+            font-size: 15px;
+            border-radius: 40px;
+            padding: 12px 26px;
+            &:hover {
+                background-color: #fe4164;
+            }
+    }
+}
+.active{
+    position: relative;
+    overflow: hidden;
+    border-color: $primary;
+}
+.label{
+    background-color:$primary;
+    padding: 8px 0;
+    width: 200px;
+    position: absolute;
+    top:22px;
+    right: -60px;
+    transform: rotate(45deg);
+    color: white;
+    font-size: 14px;
+}
+// faq
+
+.faq{
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    transform: all 0.5s;
+    p{
+        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+    &:hover i{
+        color: $primary;
+    }
+    &:hover h5{
+        color: $primary;
+    }
+}
+.form-control{
+    box-shadow: none !important;
+    height: 50px;
+    border: none;
+    background-color: #f8f9fa;
+}
+.textarea1{
+    box-shadow: none !important;
+    height: 50px;
+    border: none;
+    background-color: #f8f9fa;
+}
+.footer-logo{
+    height: 35px;
+}
+.footer-inline{
+    padding-left: 0;
+   
+}
+.footer-inline a{
+    padding-left: 0;
+   text-decoration: none;
+}
+.block{
+    display: inline-block;
+}
+.footer-inline li::after{
+    content: "|";
+    margin:0 20px;
+    color: #757575;
+}
+.footer-inline li:last-child:after{
+    content: "";
+    margin:0 20px;
+    color: #757575;
+}
+.footer-line{
+    width: 100%;
+    height: 2px;
+    background-color: #e9e9e9;
+}
+.icon-1{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #868e86;
+    display: block;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+   
+}
+a{
+    text-decoration: none;
+}
+.carousel-item i{
+    font-size: 50px;
+    color: $primary;
+}
+.fs20{
+    font-size: 20px;
+}
